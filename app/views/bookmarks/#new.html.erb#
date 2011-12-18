@@ -1,0 +1,5 @@
+<div class = "bookmark">
+<%= render 'form' %><%= render 'form' %>
+
+<%= link_to 'Cancel', bookmarks_path %>
+</div>
