@@ -1,11 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.1.1'
-
-group :production do
-  gem 'therubyracer', '~> 0.9.3.beta1'
-  gem 'pg'
-end
+gem 'mysql2'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
