@@ -4,6 +4,7 @@ gem 'rails', '3.1.1'
 
 group :production do
   gem 'therubyracer', '~> 0.9.3.beta1'
+  gem 'pg'
 end
 
 # Bundle edge Rails instead:
