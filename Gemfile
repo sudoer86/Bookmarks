@@ -1,10 +1,5 @@
 source 'http://rubygems.org'
 
-group :production do
-  # gems specifically for Heroku go here
-  gem "pg"
-end
-
 gem 'rails', '3.1.1'
 
 # Bundle edge Rails instead:

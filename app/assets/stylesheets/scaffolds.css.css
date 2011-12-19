@@ -1,3 +1,10 @@
+.action:hover {
+  background: #dddddd; }
+
+label {
+  font-size: 110%;
+  color: #ffffff; }
+
 html, head, body {
   background: #000000;
   color: #dddddd;
@@ -9,28 +16,54 @@ a {
   background: #000000;
   margin: 2px; }
 
+h2 {
+  margin: 0px;
+  margin-bottom: 20px; }
+
+input:focus {
+  outline: 0px; }
+
 .bookmark {
   float: left;
   padding: 15px;
   margin: 15px;
   border-radius: 10px;
-  border: 1px solid #101010; }
+  border-top: 1px solid #101010;
+  border-left: 1px solid #101010; }
 
 img {
   display: block;
   width: auto;
-  height: 200px;
+  height: 128px;
   margin-left: auto;
   margin-right: auto; }
 
 input, button {
-  background: #000000;
+  font-size: 100%;
+  background: #111111;
   color: #dddddd;
-  border: 1px, solid, #dddddd;
   border-radius: 5px;
   padding: 5px;
+  border-width: 0px; }
+
+input:hover, button:hover {
+  border: 1px, solid, #dddddd;
   border-style: solid;
-  border-width: 1px; }
+  border-width: 1px;
+  border-color: #dddddd;
+  padding: 4px; }
+
+button.small {
+  background: #000000;
+  color: #555555;
+  font-size: 90%;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  margin-right: 5px; }
+
+button.small:hover {
+  background: #101010; }
 
 div.field, div.actions {
   margin-bottom: 10px; }

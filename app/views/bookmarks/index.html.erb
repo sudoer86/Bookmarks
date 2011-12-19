@@ -2,21 +2,23 @@
 <% @bookmarks.each do |bookmark| %>
   <div id="<%= bookmark.id %>"class = "bookmark">
   <%= link_to bookmark.name, bookmark.href %><br/>
-  <%= link_to image_tag(bookmark.img),"http://" + bookmark.href%><br/>
+  <%= link_to image_tag(bookmark.img), bookmark.href%><br/>
   <button 
      id="edit" 
+     class="small"
      onclick="$('#'+<%=bookmark.id%>+'.bookmark').load('bookmarks/'+ <%=bookmark.id%>+ '/edit')">
     edit
   </button>
   <button 
      id="delete"
+     class="small"
      onclick="deleteBookmark(<%=bookmark.id%>)">
     delete
   </button>
   </div>
 <% end %>
 
-<div style="float:left;margin:50px">
+<div class="bookmark" style="float:left;margin-left:50px">
 <h2>New Bookmark</h2>
 <%= render "form" %>
 </div>
